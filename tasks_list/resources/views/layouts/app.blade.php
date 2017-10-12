@@ -6,6 +6,6 @@
     </head>
 
     <body>
-        @yield('content')git 
+        @yield('content') 
     </body>
 </html>

@@ -2,10 +2,10 @@
 
 @section('content')
 
-    <h1>id = {{ $message->id }} のタスク詳細ページ</h1>
+    <h1>id = {{ $task->id }} のタスク詳細ページ</h1>
 
-    <p>{{ $message->content }}</p>
+    <p>{{ $task->content }}</p>
 
-    {!! link_to_route('messages.edit', 'このタスクを編集', ['id' => $message->id]) !!}
+    {!! link_to_route('tasks.edit', 'このタスクを編集', ['id' => $task->id]) !!}
 
 @endsection

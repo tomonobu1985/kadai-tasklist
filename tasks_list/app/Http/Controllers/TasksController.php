@@ -54,7 +54,7 @@ class TasksController extends Controller
         $task->content = $request->content;
         $task->save();
 
-        return redirect('/');
+        return redirect('/tasks');
     }
 
     /**
@@ -66,7 +66,7 @@ class TasksController extends Controller
     public function show($id)
     {
         //
-        $task = Message::find($id);
+        $task = Task::find($id);
 
         return view('tasks.show', [
             'task' => $task,
@@ -118,6 +118,6 @@ class TasksController extends Controller
         $task = Task::find($id);
         $task->delete();
 
-        return redirect('/');
+        return redirect('/tasks');
     }
 }

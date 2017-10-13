@@ -3,9 +3,21 @@
 @section('content')
 
     <h1>id = {{ $task->id }} のタスク詳細ページ</h1>
+    
+    @if (count($errors) > 0)
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
+    
+    {!! Form::model($message, ['route' => ['messages.update', $message->id], 'method' => 'put']) !!}
 
-    <p>{{ $task->content }}</p>
+        {!! Form::label('content', 'メッセージ:') !!}
+        {!! Form::text('content') !!}
 
-    {!! link_to_route('tasks.edit', 'このタスクを編集', ['id' => $task->id]) !!}
+        {!! Form::submit('更新') !!}
 
+    {!! Form::close() !!}
 @endsection

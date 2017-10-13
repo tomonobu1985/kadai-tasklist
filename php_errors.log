@@ -1,0 +1,52 @@
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP Fatal error:  Class 'PhpParser\Node\Expr\Variable' not found in /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/nikic/php-parser/lib/PhpParser/Parser/Php5.php on line 2984
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP Stack trace:
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/kadai-tasklist/task-list/artisan:0
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/ubuntu/workspace/kadai-tasklist/task-list/artisan:36
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   3. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:107
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:117
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:199
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   6. Illuminate\Console\Command->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:870
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   7. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   8. Illuminate\Console\Command->execute() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Command/Command.php:261
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   9. Illuminate\Container\Container->call() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Console/Command.php:150
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  10. call_user_func_array:{/home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Container/Container.php:507}() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  11. Illuminate\Foundation\Console\TinkerCommand->fire() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  12. Psy\Shell->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php:54
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  13. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:273
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  14. Psy\Shell->doRun() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:117
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  15. Psy\ExecutionLoop\ForkingLoop->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:307
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  16. Psy\ExecutionLoop\Loop->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/ExecutionLoop/ForkingLoop.php:79
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  17. Psy\ExecutionLoop\{closure}() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/ExecutionLoop/Loop.php:135
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  18. Psy\Shell->getInput() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/ExecutionLoop/Loop.php:70
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  19. Psy\Shell->addCode() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:358
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  20. Psy\CodeCleaner->clean() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:483
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  21. Psy\CodeCleaner->parse() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/CodeCleaner.php:112
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  22. PhpParser\ParserAbstract->parse() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/CodeCleaner.php:158
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  23. PhpParser\Parser\Php5->reduceRule511() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php:247
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP Fatal error:  Class 'Symfony\Component\Debug\Exception\FatalErrorException' not found in /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php on line 131
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP Stack trace:
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/kadai-tasklist/task-list/artisan:0
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/ubuntu/workspace/kadai-tasklist/task-list/artisan:36
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   3. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:107
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:117
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:199
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   6. Illuminate\Console\Command->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:870
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   7. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   8. Illuminate\Console\Command->execute() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Command/Command.php:261
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP   9. Illuminate\Container\Container->call() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Console/Command.php:150
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  10. call_user_func_array:{/home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Container/Container.php:507}() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  11. Illuminate\Foundation\Console\TinkerCommand->fire() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  12. Psy\Shell->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php:54
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  13. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:273
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  14. Psy\Shell->doRun() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/symfony/console/Application.php:117
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  15. Psy\ExecutionLoop\ForkingLoop->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:307
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  16. Psy\ExecutionLoop\Loop->run() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/ExecutionLoop/ForkingLoop.php:79
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  17. Psy\ExecutionLoop\{closure}() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/ExecutionLoop/Loop.php:135
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  18. Psy\Shell->getInput() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/ExecutionLoop/Loop.php:70
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  19. Psy\Shell->addCode() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:358
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  20. Psy\CodeCleaner->clean() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/Shell.php:483
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  21. Psy\CodeCleaner->parse() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/CodeCleaner.php:112
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  22. PhpParser\ParserAbstract->parse() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/psy/psysh/src/Psy/CodeCleaner.php:158
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  23. PhpParser\Parser\Php5->reduceRule511() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php:247
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  24. Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:0
+[12-Oct-2017 18:51:24 Asia/Tokyo] PHP  25. Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError() /home/ubuntu/workspace/kadai-tasklist/task-list/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:118

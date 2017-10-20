@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>loginページ</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+<!--
         <style>
             html, body {
                 height: 100%;
@@ -35,6 +35,23 @@
             }
         </style>
     </head>
+-->
+@extends('layouts.app')
+
+@section('content')
+    @if (Auth::check())
+        <?php $user = Auth::user(); ?>
+        {{ $user->name }}
+    @else
+        <div class="center jumbotron">
+            <div class="text-center">
+                <h1>Welcome to the TaskLists</h1>
+                {!! link_to_route('signup.get', 'Sign up now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            </div>
+        </div>
+    @endif
+@endsection
+<!--
     <body>
         <div class="container">
             <div class="content">
@@ -42,4 +59,5 @@
             </div>
         </div>
     </body>
+-->
 </html>

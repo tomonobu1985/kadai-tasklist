@@ -23,6 +23,7 @@ class Authenticate
     public function __construct(Guard $auth)
     {
         $this->auth = $auth;
+        $this->middleware('guest', ['except' => 'getLogout']);
     }
 
     /**

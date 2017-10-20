@@ -19,8 +19,10 @@ class TasksController extends Controller
     public function index()
     {
         //
-        $tasks = Task::all();
-        
+        $user= \Auth::user();
+        $tasks = $user->tasks()->orderBy('id')->get();        
+//        $tasks = Task::all();
+//dd($tasks);
         return view('tasks.index' ,[
             'tasks' => $tasks,
             ]);

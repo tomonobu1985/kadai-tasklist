@@ -20,7 +20,7 @@ class TasksController extends Controller
     {
         //
         $user= \Auth::user();
-        $tasks = $user->tasks()->orderBy('id')->get();        
+        $tasks = $user->tasks()->orderBy('id')->get();
 //        $tasks = Task::all();
 //dd($tasks);
         return view('tasks.index' ,[
